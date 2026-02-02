@@ -23,26 +23,18 @@ body{
 
 /* HERO */
 .hero{
-  background:url("hero.png") center/cover no-repeat;
-  height:88vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
   text-align:center;
+  background:#3f0000;
   color:white;
-  position:relative;
+  padding:40px 20px 60px;
 }
 
-.hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(40,0,0,.65);
-}
-
-.hero-content{
-  position:relative;
-  z-index:2;
+.hero img{
+  max-width:900px;
+  width:100%;
+  border-radius:12px;
+  display:block;
+  margin:0 auto 25px;
 }
 
 /* NAV */
@@ -104,11 +96,19 @@ footer{
 <body>
 
 <header class="hero">
-  <div class="hero-content">
-    <h1>St. Gonsalo Garcia of Vasai</h1>
-    <p>Missionary • Martyr • First Indian Saint • Faith & Legacy</p>
-  </div>
+
+  <!-- SEO IMPORTANT: real image, not background -->
+  <img 
+    src="hero.png" 
+    alt="St Gonsalo Garcia Church Barampur Vasai Feast Celebration" 
+    loading="eager"
+  >
+
+  <h1>St. Gonsalo Garcia of Vasai</h1>
+  <p>Missionary • Martyr • First Indian Saint • Faith & Legacy</p>
+
 </header>
+
 
 <nav>
   <a href="#life">Life</a>
@@ -128,7 +128,7 @@ footer{
 </div>
 
 <p>
-<strong>:contentReference[oaicite:1]{index=1}</strong> was born in 1557 in Vasai, formerly known as Bassein, during the Portuguese period in western India. Growing up in a devout Catholic family, he developed a strong spiritual foundation rooted in prayer, humility, and service to others. Even as a child, he helped the poor and assisted in church activities.
+<strong>St. Gonsalo Garcia </strong> was born in 1557 in Vasai, formerly known as Bassein, during the Portuguese period in western India. Growing up in a devout Catholic family, he developed a strong spiritual foundation rooted in prayer, humility, and service to others. Even as a child, he helped the poor and assisted in church activities.
 </p>
 
 <p>
